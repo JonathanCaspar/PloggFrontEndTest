@@ -1,0 +1,344 @@
+html *{
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex{ 
+  display: flex; 
+  flex-direction: column; 
+  margin: 0;
+}
+
+.rowFlex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav img {
+  width: auto;
+  height: 70px;
+  padding-left: 29px;
+}
+
+#nav_helper{
+	position: absolute;
+	top: 11px;
+	right: 30px;
+	font-size: 9pt;
+	width: fit-content;
+}
+
+#nav_helper > a{
+	font-weight: bold;
+	text-decoration: none;
+	text-align: right;
+	padding: 4px 18px;
+	background-color: #FFD701;
+}
+
+#nav_helper > a:last-child{ /*lang options*/
+	background-color: #05CBAA;
+}
+
+#nav_actions {
+	margin: 50px 0 27px;
+}
+
+#nav_actions > a {
+  padding: 0px 25px;
+  color: #020202;
+	text-decoration: none;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+#nav_actions > a:hover {
+  color: #F66C48;
+}
+
+#search_field {
+	padding: 15px;
+	background-color: #EAEAEA;
+}
+
+#search_form{
+	height: 45px;
+	justify-content: center;
+}
+
+#search_form *:not(a){
+	text-align: left;
+	border: 1px solid #DADADA;
+	border-right: none;
+	background: #F5F5F5;
+	height: -webkit-fill-available;
+	padding: 0 11px 0px 18px;
+	width: 97px;;
+
+}
+
+#search_form > *:focus{
+	outline: 1px solid #05CBAA;
+}
+
+#search_form *{
+	text-align: left;
+    font-size: 11pt;
+	font-weight: 600;
+	color: #757575;
+	letter-spacing: 1px;
+}
+
+#search_form input[name="arrival_date"], #search_form input[name="departure_date"]{
+  border-right: none;
+  width: 63px;
+}
+
+#search_form input[name="departure_date"]{
+  border-left: none;
+	}
+
+#search_form img[name="right_arrow"], #search_form img[name="calendar"]{
+  border-left: none;
+  width: fit-content;
+  padding: 0;;
+
+}
+#search_form img[name="calendar"]{
+  padding-right: 10px;
+
+}
+
+#search_form > label{
+		    width: 14%;
+		    padding: 13px 14px;
+
+}
+
+#search_form > input[type="submit"]{
+	  background-color: #00CEAA;
+	  letter-spacing: 2px;
+	  padding: 0px 40px;
+	  width: fit-content;
+	  font-weight: 600;
+	  color: white;
+	  font-size: 10pt;
+}
+
+#more_filters_button{
+  font-size: 9pt;
+  letter-spacing: 1px;
+  padding: 0 9px;
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+#content > div {
+  display: flex;;
+}
+
+#content_header{
+	position: relative;
+  text-align: center;
+}
+
+#content_header > img{
+  width: 100%;
+  height: 100%;
+}
+
+#content_header input[name="subscribe"]{
+  border-radius: 30px;
+}
+
+#content_details{
+  flex-wrap: wrap;
+}
+
+.content_box{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 500px;
+	flex: 0 0 50%;;
+}
+
+.content_box_img {
+  width:-webkit-fill-available;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content_box > div {
+  margin: 0px 18%;
+  padding: 31px 0;
+}
+
+
+.content_item_title {
+	display: flex;
+	flex-wrap: nowrap;
+	vertical-align: center;
+	align-items: center;
+}
+
+.content_item_title > img {
+  width: 60px;
+  height: 100%;
+}
+
+.content_item_title > p {
+  font-size: 15pt;
+  margin-right: 31%;
+  margin-left: 8px;	
+  text-shadow: none;
+}
+
+.first_item_of_box{
+	padding-bottom: 10%;
+}
+
+#item1_title{
+	color: #50468F; /* purple */
+}
+
+#item2_title{
+	color: #F66C48; /* orange */
+}
+
+#item3_title{
+	color: #05CBAA; /* green */
+}
+
+#item4_title{
+	color: #FFD701; /* yellow */
+}
+
+.centered {
+	width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title_style {
+	color: white;
+  font-size: 28pt;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px grey;
+}
+
+.keywords{
+	color: #05CBAA;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.button{
+  font-size: 10pt;
+  letter-spacing: 1px;
+  background-color: #00CEAA;
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  outline:none;
+  cursor: pointer;
+}
+
+/*--- Footer section ---*/
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+#contact_infos{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	background: #524B8E;
+	color: white;
+	height: 292px;
+	font-size: 14px;
+	opacity: 0.95;
+}
+
+#contact_infos_layer{
+  background: url(../img/dreamingetaway_logo.png);
+  background-size: 530px auto;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#mail_subscription{
+	height: fit-content;
+  background: #FFD701;
+	flex-direction: row;
+	align-items: center;
+  justify-content: center;
+  font-size: 19pt;
+	padding: 21px 60px;
+}
+
+#mail_subscription > form {
+  display: flex;
+}
+
+#mail_subscription > p {
+  margin: 0 40px 0 0;
+}
+
+#mail_subscription input[type="email"]{
+	border: none;
+  height: 38px;
+  padding: 0 80px 0 17px;
+}
+
+#social_medias img {
+	width: auto;
+	height: 32px;
+}
+
+#social_medias a {
+	    margin-right: 22px;
+}
+
+#contact_infos a:hover{
+	color: #F66C48;
+}
+
+#contact_infos_2 a{
+	padding-top: 9px;
+}
+
+#contact_infos_3 img {
+	width: auto;
+	height: 26px;
+	padding-right: 7px;
+}
+
+#contact_infos_3 img[alt="mail icon"]{
+	height: 18px;
+	padding-left: 3px;
+}
+
+#contact_infos_3 > div {
+	padding-top: 14px;
+}
+   
+
+#phone_details{
+	display: inline-block;
+}
+
+#copyright {
+  color: white;
+  background-color: #463F82;
+  padding: 7px 60px 7px 300px;
+  font-size: 10pt;
+}
