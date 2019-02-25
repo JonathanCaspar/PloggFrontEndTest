@@ -175,7 +175,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     min-width: 400px;
-    flex: 0 0 50%;
+    flex: 1 0 50%;
 }
 
 .content_box_img {
