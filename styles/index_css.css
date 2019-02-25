@@ -72,9 +72,9 @@ nav img {
 	border: 1px solid #DADADA;
 	border-right: none;
 	background: #F5F5F5;
-	height: -webkit-fill-available;
 	padding: 0 11px 0px 18px;
-	width: 97px;;
+	width: 97px;
+	height: 100%;
 
 }
 
@@ -90,6 +90,10 @@ nav img {
 	letter-spacing: 1px;
 }
 
+#search_form input[name="label"]{
+	width: 227px;
+}
+
 #search_form input[name="arrival_date"], #search_form input[name="departure_date"]{
   border-right: none;
   width: 63px;
@@ -101,8 +105,8 @@ nav img {
 
 #search_form img[name="right_arrow"], #search_form img[name="calendar"]{
   border-left: none;
-  width: fit-content;
-  padding: 0;;
+  width: max-content;
+  padding: 0;
 
 }
 #search_form img[name="calendar"]{
@@ -120,10 +124,16 @@ nav img {
 	  background-color: #00CEAA;
 	  letter-spacing: 2px;
 	  padding: 0px 40px;
-	  width: fit-content;
 	  font-weight: 600;
 	  color: white;
 	  font-size: 10pt;
+	  width: fit-content;
+}
+
+@supports (-ms-ime-align: auto) { 
+	#search_form > input[type="submit"]{
+	  width: 190px;
+	}
 }
 
 #more_filters_button{
@@ -265,14 +275,29 @@ footer a{
 	color: white;
 	height: 292px;
 	font-size: 14px;
-	opacity: 0.95;
+	opacity: 0.98;
+
+}
+
+@supports (-ms-ime-align: auto) { /*Edge*/
+  #contact_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: #524B8E;
+	color: white;
+	height: 292px;
+	font-size: 14px;
+	opacity: 0.98;
+  }
 }
 
 #contact_infos_layer{
   background: url(../img/dreamingetaway_logo.png);
   background-size: 530px auto;
-  background-position: right;
   background-repeat: no-repeat;
+  background-position-x: 105%;
+  background-position-y: center;
 }
 
 #mail_subscription{
@@ -287,6 +312,9 @@ footer a{
 
 #mail_subscription > form {
   display: flex;
+  justify-content: stretch;
+  /* width: 100px; */
+  /* justify-content: stretch; */;
 }
 
 #mail_subscription > p {
@@ -295,8 +323,8 @@ footer a{
 
 #mail_subscription input[type="email"]{
 	border: none;
-  height: 38px;
   padding: 0 80px 0 17px;
+	height: 38px;
 }
 
 #social_medias img {
