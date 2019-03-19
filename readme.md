@@ -1,1 +1,4 @@
-FrontEnd Test for Internship, website available by clicking [here](https://jonathancaspar.github.io/PloggFrontEndTest/).
+FrontEnd Test for Internship (Pure HTML/CSS)
+---------------------
+
+Website available by clicking [here](https://jonathancaspar.github.io/PloggFrontEndTest/).
